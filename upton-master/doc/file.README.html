@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>
+  File: README
+  
+    &mdash; Documentation by YARD 0.8.7
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" charset="utf-8" />
+
+<script type="text/javascript" charset="utf-8">
+  hasFrames = window.top.frames.main ? true : false;
+  relpath = '';
+  framesUrl = "frames.html#!" + escape(window.location.href);
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div id="header">
+      <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo; 
+    <span class="title">File: README</span>
+  
+
+  <div class="noframes"><span class="title">(</span><a href="." target="_top">no frames</a><span class="title">)</span></div>
+</div>
+
+      <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+      Class List
+    </a>
+  
+    <a class="full_list_link" id="method_list_link"
+        href="method_list.html">
+      Method List
+    </a>
+  
+    <a class="full_list_link" id="file_list_link"
+        href="file_list.html">
+      File List
+    </a>
+  
+</div>
+      <div class="clear"></div>
+    </div>
+
+    <iframe id="search_frame"></iframe>
+
+    <div id="content"><div id='filecontents'><h1>Upton</h1>
+
+<p>Upton is a framework for easy web-scraping with a useful debug mode that doesn&#39;t hammer your target&#39;s servers. It does the repetitive parts of writing scrapers, so you only have to write the unique parts for each site.</p>
+
+<h2>Documentation</h2>
+
+<p>With Upton, you can scrape complex sites to a CSV in just one line of code.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Upton</span><span class='op'>::</span><span class='const'>Scraper</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>http://website.com/list_of_stories.html</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>a#article-link</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:css</span><span class='rparen'>)</span><span class='period'>.</span>
+    <span class='id identifier rubyid_scrape_to_csv'>scrape_to_csv</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>output.csv</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='op'>&amp;</span><span class='const'>Upton</span><span class='op'>::</span><span class='const'>Utils</span><span class='period'>.</span><span class='id identifier rubyid_list'>list</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>#comments li a.commenter-name</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:css</span><span class='rparen'>)</span><span class='rparen'>)</span>
+</code></pre>
+
+<p>Just specify a URL to a list of links -- or simply a list of links --, an XPath expression or CSS selector for the links and a block of what to do with the content of the pages you&#39;ve scraped. Upton comes with some pre-written blocks (Procs, technically) for scraping simple lists and tables, like the <code>list</code> function above.</p>
+
+<p>Upton operates on the theory that, for most scraping projects, you need to scrape two types of pages:</p>
+
+<ol>
+<li>Instance pages, which are the goal of your scraping, e.g. job listings or news articles.</li>
+<li>Index pages, which list instance pages. For example, a job search site&#39;s search page or a newspaper&#39;s homepage.</li>
+</ol>
+
+<p>For more complex use cases, subclass <code>Upton::Scraper</code> and override the relevant methods. If you&#39;re scraping links from an API, you would override <code>get_index</code>; if you need to log in before scraping a site or do something special with the scraped instance page, you would override <code>get_instance</code>.</p>
+
+<p>The <code>get_instance</code> and <code>get_index</code> methods use a protected method <code>get_page(url)</code> which, well, gets a page. That&#39;s not very special. The more interesting part is that <code>get_page(url, stash)</code> transparently stashes the response of each request if the second parameter, <code>stash</code>, is true. Whenever you repeat a request (with <code>true</code> as the second parameter), the stashed HTML is returned without going to the server. This is helpful in the development stages of a project when you&#39;re testing some aspect of the code and don&#39;t want to hit a server each time. If you are using <code>get_instance</code> and <code>get_index</code>, this can be en/disabled per instance of <code>Upton::Scraper</code> or its subclasses with the <code>@debug</code> option. Setting the <code>stash</code> parameter of the <code>get_page</code> method should only be used if you&#39;ve overridden <code>get_instance</code> or <code>get_index</code> in a subclass.</p>
+
+<p>Upton also sleeps (by default) 30 seconds between non-stashed requests, to reduce load on the server you&#39;re scraping. This is configurable with the <code>@sleep_time_between_requests</code> option.</p>
+
+<p>Upton can handle pagination too. Scraping paginated index pages that use a query string parameter to track the current page (e.g. <code>/search?q=test&amp;page=2</code>) is possible by setting <code>@pagination</code> to true. Use <code>@pagination_param</code> to set the query string parameter used to specify the current page (the default value is <code>page</code>). Uses @pagination_max_pages to specify the number of pages to scrape (the default is two pages) See the Examples section below.</p>
+
+<p>To handle non-standard pagination, you can override the <code>next_index_page_url</code> and <code>next_instance_page_url</code> methods; Upton will get each page&#39;s URL returned by these functions and return their contents.</p>
+
+<p><b>For more complete documentation</b>, see <a href="http://rubydoc.info/gems/upton/frames/index">the RDoc</a>.</p>
+
+<p><b>Important Note:</b> Upton is alpha software. The API may change at any time. </p>
+
+<h4>How is this different than Nokogiri?</h4>
+
+<p>Upton is, in essence, sugar around RestClient and Nokogiri. If you just used those tools by themselves to write scrapers, you&#39;d be responsible for writing code to fetch, save (maybe), debug and sew together all the pieces in a slightly different way for each scraper. Upton does most of that work for you, so you can skip the boilerplate.</p>
+
+<h4>Upton doesn&#39;t quite fit your needs?</h4>
+
+<p>Here are some similar libraries to check out. No promises, since I&#39;ve never used them, but they seem similar and were <a href="https://news.ycombinator.com/item?id=6086031">recommended by various HN commenters</a>: </p>
+
+<ul>
+<li><a href="https://github.com/peterc/pismo">Pismo</a></li>
+<li><a href="https://github.com/joeyAghion/spidey">Spidey</a></li>
+<li><a href="http://anemone.rubyforge.org/">Anemone</a></li>
+</ul>
+
+<h2>Examples</h2>
+
+<p>If you want to scrape ProPublica&#39;s website with Upton, this is how you&#39;d do it. (Scraping our <a href="http://feeds.propublica.org/propublica/main">RSS feed</a> would be smarter, but not every site has a full-text RSS feed...)</p>
+
+<pre class="code ruby"><code class="ruby"><span class='const'>Upton</span><span class='op'>::</span><span class='const'>Scraper</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>http://www.propublica.org</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>section#river section h1 a</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span> <span class='symbol'>:css</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_scrape'>scrape</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_article_string'>article_string</span><span class='op'>|</span>
+  <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>here is the full text of the ProPublica article: \n </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_article_string'>article_string</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+  <span class='comment'>#or, do other stuff here.
+</span><span class='kw'>end</span>
+</code></pre>
+
+<p>Simple sites can be scraped with pre-written <code>list</code> block in `Upton::Utils&#39;, as below:</p>
+
+<pre class="code ruby"><code class="ruby">&gt; u = Upton::Scraper.new(&quot;http://nytimes.com&quot;, &quot;ul.headlinesOnly a&quot;, :css)
+&gt; u.scrape_to_csv(&quot;output.csv&quot;, &amp;Upton::Utils.list(&quot;h6.byline&quot;, :css))
+</code></pre>
+
+<p>A <code>table</code> block also exists in <code>Upton::Utils</code> to scrape tables to an array of arrays, as below:</p>
+
+<pre class="code ruby"><code class="ruby">&gt; u = Upton::Scraper.new([&quot;http://website.com/story.html&quot;])
+&gt; u.scrape(&amp;Upton::Utils.table(&quot;//table[2]&quot;, :xpath))
+[[&quot;Jeremy&quot;, &quot;$8.00&quot;], [&quot;John Doe&quot;, &quot;$15.00&quot;]]
+</code></pre>
+
+<p>This example shows how to scrape the first three pages of ProPublica&#39;s search results for the term <code>tools</code>:</p>
+
+<pre class="code ruby"><code class="ruby">&gt; scraper = Upton::Scraper.new(&quot;http://www.propublica.org/search/search.php?q=tools&quot;, &quot;.compact-list a.title-link&quot;, :css)
+&gt; scraper.paginated = true
+&gt; scraper.pagination_param = &#39;p&#39;    # default is &#39;page&#39;
+&gt; scraper.pagination_max_pages = 3  # default is 2
+&gt; scraper.scrape_to_csv(&quot;output.csv&quot;, &amp;Upton::Utils.list(&quot;h1&quot;, :css))
+</code></pre>
+
+<h2>Contributing</h2>
+
+<p>I&#39;d love to hear from you if you&#39;re using Upton. I also appreciate your suggestions/complaints/bug reports/pull requests. If you&#39;re interested, check out the issues tab or <a href="http://github.com/jeremybmerrill">drop me a note</a>.</p>
+
+<p>In particular, if you have a common, <em>abstract</em> use case, please add them to <a href="https://github.com/propublica/upton/blob/master/lib/utils.rb">lib/utils.rb</a>. Check out the <code>table_to_csv</code> and <code>list_to_csv</code> methods for examples.</p>
+
+<p>(The pull request process is pretty easy. Fork the project in Github (or via the <code>git</code> CLI), make your changes, then submit a pull request on Github.) </p>
+
+<h2>Why &quot;Upton&quot;</h2>
+
+<p>Upton Sinclair was a pioneering, muckraking journalist who is most famous for <em>The Jungle</em>, a novel portraying the reality of immigrant labor struggles in Chicago meatpacking plants at the start of the 1900s. Upton, the gem, sprang out of a ProPublica project pertaining to labor issues.</p>
+
+<h2>Notes</h2>
+
+<p>Test data is copyrighted by either ProPublica or various Wikipedia contributors.
+In either case, it&#39;s reproduced here under a Creative Commons license. In ProPublica&#39;s case, it&#39;s BY-NC-ND; in Wikipedia&#39;s it&#39;s BY-SA.</p>
+</div></div>
+
+    <div id="footer">
+  Generated on Thu Aug 15 00:25:44 2013 by
+  <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.8.7 (ruby-2.0.0).
+</div>
+
+  </body>
+</html>
