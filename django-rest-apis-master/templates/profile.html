@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block title %}Update profile photo{% endblock %}
+
+{% block content %}
+
+<h2>Update profile photo</h2>
+
+<p>This page shows how to upload a new profile photo.
+Learn more about updating a profile photo on Twitter by reading the 
+<a href="https://dev.twitter.com/rest/reference/post/account/update_profile_image" target="_target">POST account/update_profile_image</a> documentation.</p>  
+</p>
+</p>  
+
+<h3>The code</h3>
+
+{% include "_examples.html" %}
+
+<h3>Try it</h3>
+
+<p></p>
+
+<form class="form-horizontal" action="/profile" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
+  
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">File</label>
+    <div class="col-sm-10">
+
+<!--    
+            <p>{{ form.non_field_errors }}</p>
+            <p>{{ form.file.label_tag }} {{ form.file.help_text }}</p>
+-->
+            <p>
+                {{ form.file }}
+                
+				{% if request.method == 'POST' and not form.is_valid %}
+				<div class="alert alert-danger" role="alert">
+        	    	<p>{{ form.file.errors }}</p>
+	            </div>
+    	        {% endif %}
+            </p>
+            
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-10">
+      <button type="submit" class="btn btn-primary">Update profile photo</button>
+    </div>
+  </div>
+</form>
+
+
+{% endblock %}

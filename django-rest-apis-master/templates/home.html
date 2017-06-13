@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<h2>REST API Samples</h2>
+
+<p>This is a collection of Twitter API samples, covering common use cases such as:
+
+<ul>
+<li><a href="/tweet">Post a Tweet</a>
+<li><a href="/query">Query Tweets</a>
+<li><a href="/media/photo">Upload photo</a>
+<li><a href="/media/video">Upload video</a>
+<li><a href="/profile">Update profile photo</a>
+</ul>
+
+<p>These examples also show how to execute the API calls using 
+Python (<a href="https://github.com/bear/python-twitter" target="_target">python-twitter</a>), <a href="" target="_target">twurl</a>, Node.js (<a href="https://github.com/ttezel/twit" target="_target">twit</a>), Ruby (<a href="https://rubygems.org/gems/twitter" target="_target">twitter gem</a>), and Java (<a href="https://github.com/yusuke/twitter4j/" target="_target">Twitter4J</a>).
+
+<h2>Tools</h2>
+
+<ul>
+	<li><a href="/media/inspector">Media Inspector.</a> Use this tool to get detailed information about your video files including includes format and stream information.</li>
+</ul>
+
+<h3>Libraries</h3>
+These are the libraries used in the code examples.
+
+<h4>python-twitter</h4>
+<p>The <code>python-twitter</code> library provides a pure Python interface for the Twitter API. 
+It works with Python versions from 2.6+. Python 3 support is under development. <code>python-twitter</code>
+was started and maintained by <a href="http://twitter.com/codebear" target="_target">Mike Taylor</a>.</p>
+
+<p>You can learn more about <code>python-twitter</code> by visiting the 
+<a href="https://github.com/bear/python-twitter" target="_target">python-twitter Github repo</a>.
+
+<h4>Twurl</h4>
+<p>Twurl is like curl, but tailored specifically for the Twitter API.
+It knows how to grant an access token to a client application for
+a specified user and then sign all requests with that access token.</p>
+
+<p>It also provides other development and debugging conveniences such
+as defining aliases for common requests, as well as support for
+multiple access tokens to easily switch between different client
+applications and Twitter accounts.</p>
+
+<p>You can learn more about Twurl by visiting the <a href="https://github.com/twitter/twurl" target="_target">Twurl Github repo</a>.
+
+{% endblock %}
