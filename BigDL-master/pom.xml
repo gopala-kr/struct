@@ -12,7 +12,7 @@
     <name>BigDL</name>
     <description>A distributed deep learning library for Apache Spark.</description>
     <url>https://github.com/intel-analytics/BigDL</url>
-
+ 
     <developers>
         <developer>
             <name>Jason Dai</name>
