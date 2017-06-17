@@ -1,0 +1,26 @@
+[ainews]
+version     = 1.1
+
+; the ainews crawler's agent name
+agent_name  = AINewsFinder
+
+; turn On/Off for extra debug information
+debug       = On
+
+; period is the # of days for crawling and ranking news
+period      = 7
+
+[parser]
+; link density ratio is the ratio of #link words to # total words
+; the parser will remove the whole block content if the ratio is larger than 
+; this threshold for noisy removal.
+link_density_ratio = 0.4
+
+[duplicates]
+days_back = 14
+threshold = 0.13
+
+[publisher]
+max_cat_count    = 6
+max_count        = 12
+

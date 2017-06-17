@@ -1,0 +1,105 @@
+[ainews]
+
+; ainews_root is the root directory of the Python code
+; (leave trailing slash)
+ainews_root = /path/to/AINews/
+
+; (leave trailing slash)
+category_data = /path/to/category/
+
+; (leave trailing slash)
+news_data = /path/to/news/
+
+; (leave trailing slash)
+output = /path/to/output/
+
+; (leave trailing slash)
+output_xml = /path/to/output_xml/
+
+; (leave trailing slash)
+html = /path/to/html/
+
+; (leave trailing slash)
+rss = /path/to/rss/
+
+stoplist = /path/to/stoplist.txt
+
+whitelist = /path/to/whitelist.txt
+
+blacklist_urls = /path/to/blacklist_urls.txt
+
+blacklist_words = /path/to/blacklist_words.txt
+
+; URL for sources CSV file
+sources_csv = http://path/to/sources.csv
+
+; URL for weekly news XML file
+top_weekly_news_xml = http://path/to/top-weekly-news.xml
+
+; (leave trailing slash)
+content_tmp = /path/to/content_tmp/
+
+; (leave trailing slash)
+image_dir = /path/to/images/
+
+[imagemagick]
+
+mogrify = /usr/bin/mogrify
+
+[libraries]
+
+; (leave trailing slash)
+tools = /path/to/tools/
+
+; OTS binary
+ots = /path/to/ots
+
+; Maven2 binary
+maven = /path/to/maven
+
+[templates]
+
+; (leave trailing slash)
+compiled = /path/to/compiled/
+
+[pmwiki]
+
+; (leave trailing slash)
+dir = /path/to/pmwiki/
+
+[svm]
+
+; (leave trailing slash)
+svm_data = /path/to/svm/
+
+; this is the location of models that are actively being trained
+; and for test models (for evaluation purposes)
+; (leave trailing slash)
+svm_data_tmp = /path/to/svm_tmp/
+
+[corpus]
+
+; (leave trailing slash)
+corpus_other = /path/to/corpus/other/
+
+; pickle files
+duplist = /path/to/corpus/duplist.pkl
+notduplist = /path/to/corpus/notduplist.pkl
+
+[feedback]
+
+; collect the user's feedback score into a file
+feedback_score = /path/to/resource/feedback.csv
+editor_score = /path/to/resource/editor.csv
+
+; (leave trailing slash)
+submit_news_data = /path/to/submit_news_data/
+
+[weka]
+
+weka_jar = /usr/share/java/weka.jar
+
+bag_of_words = /home/josh/git/artifice/NewsFinder/weka_training/bag_of_words.pickle
+
+; (leave trailing slash)
+training_arff_dir = /home/josh/git/artifice/NewsFinder/weka_training/
