@@ -1,0 +1,26 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+export DH_VERBOSE = 1
+
+PYTHON2 = $(shell pyversions -r)
+PYTHON3 = $(shell py3versions -r)
+PKGDIR = $(CURDIR)/debian
+D_MAKE = $(MAKE) -C .. UNAME=Debian PY_INSTALL_OPTS="--install-layout=deb --no-compile"
+
+%:
+	dh $@ --with python2,python3
+
+override_dh_auto_install:
+	$(D_MAKE) install-master   DESTDIR=$(PKGDIR)/disco-master
+	$(D_MAKE) install-master   DESTDIR=$(PKGDIR)/python3-disco-master
+
+	$(D_MAKE) install-node     DESTDIR=$(PKGDIR)/disco-node
+	for python in $(PYTHON2); do \
+		$(D_MAKE) install-core    DESTDIR=$(PKGDIR)/python-disco   PYTHON=$$python; \
+	done
+	for python in $(PYTHON3); do \
+		$(D_MAKE) install-core    DESTDIR=$(PKGDIR)/python3-disco  PYTHON=$$python; \
+	done
+
+override_dh_usrlocal:

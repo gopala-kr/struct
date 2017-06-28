@@ -1,0 +1,146 @@
+disco (0.5.4) unstable; urgency=low
+
+  * New package for 0.5.4
+
+ -- Shayan Pooya <shayan@liveve.org>  Wed, 27 Oct 2014 22:00:00 -0700
+
+disco (0.5.3) unstable; urgency=low
+
+  * New package for 0.5.3
+
+ -- Shayan Pooya <shayan@liveve.org>  Wed, 16 Apr 2014 22:00:00 -0700
+
+disco (0.5.2) unstable; urgency=low
+
+  * New package for 0.5.2
+  * The minimum required python version in 2.7.
+  * Disco is not started by the root user anymore.
+
+ -- Shayan Pooya <shayan@liveve.org>  Wed, 16 Apr 2014 22:00:00 -0700
+
+disco (0.5.1) unstable; urgency=low
+
+  * New package for 0.5.1
+
+ -- Shayan Pooya <shayan@liveve.org>  Wed, 16 Apr 2014 22:00:00 -0700
+
+disco (0.5) unstable; urgency=low
+
+  * New package for 0.5
+
+ -- Shayan Pooya <shayan@liveve.org>  Wed, 26 Mar 2014 22:00:00 -0700
+
+disco (0.4.5) unstable; urgency=low
+
+  * New package for 0.4.5
+
+ -- Prashanth Mundkur <mundkur@discodeb2>  Wed, 27 Mar 2013 23:30:26 -0700
+
+disco (0.4.4) unstable; urgency=low
+
+  * New package for 0.4.4
+
+ --  Prashanth Mundkur <mundkur@discodeb2>  Wed, 05 Dec 2012 22:30:32 +0000
+
+disco (0.4.3) unstable; urgency=low
+
+  * New package for 0.4.3
+
+ --  Prashanth Mundkur <mundkur@discodeb2>  Tue, 21 Aug 2012 23:36:29 +0000
+
+disco (0.4.2) unstable; urgency=low
+
+  * New package for 0.4.2
+
+ --  Prashanth Mundkur <mundkur@discodeb2>  Fri, 04 May 2012 13:52:26 +0000
+
+disco (0.4.1) unstable; urgency=low
+  
+  * Bugfixes and some minor features added
+   
+ -- Ville Tuulos <tuulos@nxfront.nokiapaloalto.com>  Mon, 31 Oct 2008 15:30:32 -0700
+
+disco (0.4) unstable; urgency=low
+  
+  * Bugfixes and some minor features added
+   
+ -- Ville Tuulos <tuulos@nxfront.nokiapaloalto.com>  Mon, 31 Oct 2008 15:30:32 -0700
+
+disco (0.3.2-1) unstable; urgency=low
+  
+  * Bugfixes and some minor features added
+   
+ -- Ville Tuulos <tuulos@nxfront.nokiapaloalto.com>  Mon, 31 Oct 2008 15:30:32 -0700
+
+disco (0.3.2) unstable; urgency=low
+  
+  * Bugfixes and some minor features added
+   
+ -- Ville Tuulos <tuulos@nxfront.nokiapaloalto.com>  Mon, 31 Oct 2008 15:30:32 -0700
+
+disco (0.3.1) unstable; urgency=low
+  
+  * Bugfixes and some minor features added
+   
+ -- Ville Tuulos <tuulos@nxfront.nokiapaloalto.com>  Mon, 31 Oct 2008 15:30:32 -0700
+
+disco (0.3.0-1) unstable; urgency=low
+  
+  * Bugfixes and some minor features added
+   
+ -- Ville Tuulos <tuulos@nxfront.nokiapaloalto.com>  Mon, 31 Oct 2008 15:30:32 -0700
+
+disco (0.3.0) unstable; urgency=low
+  
+  * Bugfixes and some minor features added
+   
+ -- Ville Tuulos <tuulos@nxfront.nokiapaloalto.com>  Mon, 31 Oct 2008 15:30:32 -0700
+
+disco (0.2.4) unstable; urgency=low
+  
+  * Bugfixes and some minor features added
+   
+ -- Ville Tuulos <tuulos@nxfront.nokiapaloalto.com>  Mon, 31 Oct 2008 15:30:32 -0700
+
+disco (0.2.3) unstable; urgency=low
+  
+  * Bugfixes and some minor features added
+   
+ -- Ville Tuulos <tuulos@nxfront.nokiapaloalto.com>  Mon, 31 Oct 2008 15:30:32 -0700
+
+disco (0.2.2) unstable; urgency=low
+  
+  * Bugfixes and some minor features added
+   
+ -- Ville Tuulos <tuulos@nxfront.nokiapaloalto.com>  Mon, 31 Oct 2008 15:30:32 -0700
+
+disco (0.2.1) unstable; urgency=low
+  
+  * Bugfixes and some minor features added
+   
+ -- Ville Tuulos <tuulos@nxfront.nokiapaloalto.com>  Mon, 31 Oct 2008 15:30:32 -0700
+
+disco (0.1.3) unstable; urgency=low
+
+  * Bugfixes and some minor features added
+ 
+ -- Ville Tuulos <tuulos@nxfront.nokiapaloalto.com>  Mon, 31 Oct 2008 15:30:32 -0700
+
+disco (0.1.2) unstable; urgency=low
+
+  * Bugfixes and some minor features added
+ 
+ -- Ville Tuulos <tuulos@nxfront.nokiapaloalto.com>  Mon, 24 Oct 2008 15:30:32 -0700
+
+disco (0.1.1) unstable; urgency=low
+
+  * Bugfixes and some minor features added
+ 
+ -- Ville Tuulos <tuulos@nxfront.nokiapaloalto.com>  Mon, 06 Oct 2008 20:34:09 -0700
+
+disco (0.1) unstable; urgency=low
+
+  * Initial release 
+ 
+ -- Ville Tuulos <tuulos@nxfront.nokiapaloalto.com>  Mon, 01 Sep 2008 23:17:33 -0700
+

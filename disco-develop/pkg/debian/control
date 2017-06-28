@@ -1,0 +1,44 @@
+Source: disco
+Section: admin
+Priority: extra
+Maintainer: Shayan Pooya <shayan@liveve.org>
+Build-Depends: debhelper (>= 7), erlang-dev (>= 1:14.a-dfsg1), python3 (>= 3.2)
+Standards-Version: 3.9.3
+X-Python-Version: >= 2.7
+X-Python3-Version: >= 3.2
+Vcs-Browser: https://github.com/discoproject/disco
+Vcs-Git: git://github.com/discoproject/disco.git
+Homepage: http://www.discoproject.org
+
+Package: disco-master
+Architecture: all
+Depends: ${misc:Depends}, disco-node (= ${source:Version}), python-disco (= ${source:Version})
+Description: Disco master
+ This is Disco master.
+
+Package: python3-disco-master
+Architecture: all
+Depends: ${misc:Depends}, disco-node (= ${source:Version}), python3-disco (= ${source:Version})
+Description: Disco master
+ This is Disco master.
+
+Package: disco-node
+Architecture: any
+Depends: ${misc:Depends}, erlang-base (>= 1:14.a-dfsg1), erlang-inets (>= 1:14.a-dfsg1), erlang-xmerl (>= 1:14.a-dfsg1), erlang-ssl (>= 1:14.a-dfsg1), erlang-crypto (>= 1:14.a-dfsg1), erlang-syntax-tools (>= 1:14.a-dfsg1), adduser
+Description: Disco node
+ This is Disco node.
+
+Package: python-disco
+Architecture: all
+Section: python
+Depends: ${misc:Depends}, ${python:Depends}, python (>= 2.7)
+Recommends: python-pycurl
+Description: Disco client
+ This is Disco client for Python2.
+
+Package: python3-disco
+Architecture: all
+Section: python
+Depends: ${misc:Depends}, ${python3:Depends}, python3 (>= 3.2)
+Description: Disco client
+ This is Disco client for Python3.
