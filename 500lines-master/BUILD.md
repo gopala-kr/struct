@@ -17,7 +17,7 @@ exception of LaTeX on OS X (common practice seems to be installing
 - `pip install -r requirements.txt`. If you haven't used virtualenv, you may
   need to `sudo pip install -r requirements.txt`.
 - Install [pandoc](http://pandoc.org/) and
-  [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc). These should both
+  [pandoc-citeproc](https://github.com/jgm/pandoc-citeproc). These should b
   be available via your favorite package manager.
 
 ## Building the PDF:
