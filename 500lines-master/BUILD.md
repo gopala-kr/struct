@@ -21,7 +21,7 @@ exception of LaTeX on OS X (common practice seems to be installing
   be available via your favorite package manager.
 
 ## Building the PDF:
-- Install a LaTeX distribution. 
+- Install a LaTeX distribu
 
 - `python build.py --pdf`
 - Output will be in `output/500L.
