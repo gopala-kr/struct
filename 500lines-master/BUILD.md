@@ -32,7 +32,7 @@ exception of LaTeX on OS X (common practice seems to be installing
 - `make serve`
 
 ## Building the ePub:
-Warning: the ePub version of 500Lines is an "unsupported product"; the print
+Warning: the ePub version of 500Lines is an "unsupportedduct"; the print
 and code formatting is poor, raw LaTeX is displayed in several places, the code
 is difficult to read, and images have not been optimized for the format.
 However, if you really want 500Lines in your favorite reader, this is one way
