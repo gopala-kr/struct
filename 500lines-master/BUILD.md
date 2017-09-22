@@ -22,8 +22,9 @@ exception of LaTeX on OS X (common practice seems to be installing
 
 ## Building the PDF:
 - Install a LaTeX distribution. 
+
 - `python build.py --pdf`
-- Output will be in `output/500L.pdf`
+- Output will be in `output/500L.
 
 ## Building the HTML:
 - `python build.py --html`
