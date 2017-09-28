@@ -229,7 +229,6 @@ Please see [CONTRIBUTING](https://github.com/ziadoz/awesome-php/blob/master/CONT
 * [Purl](https://github.com/jwage/purl) - A URL manipulation library.
 * [sabre/uri](https://github.com/fruux/sabre-uri) - A functional URI manipulation library.
 * [Uri](https://github.com/thephpleague/uri) - Another URL manipulation library.
-
 ## Email
 *Libraries for sending and parsing email.*
 
