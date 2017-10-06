@@ -2,6 +2,9 @@
 
 Barbara Grosz, AI Magazine, 2012
 
+
+
+
 ## Summary
 
 - Turing, in his MIND paper in 1950, proposed an operational, behavioral alternative to the philosophical question "Can machines think?” by suggesting a simple "Turing test" where machines play the "imitation game” and humans are tasked with discerning machine from human given responses. He believed even partial success towards this goal given only 5 minutes of interaction would be hard and far-off.
