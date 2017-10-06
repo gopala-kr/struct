@@ -11,6 +11,8 @@ required only for dimensionality reduction). They also
 propose a novel technique for visualizing representations
 learnt by intermediate layers that produces nicer visualizations
 in input pixel space than DeconvNet (Zeiler et al) and Saliency
+
+
 map (Simonyan at al) approaches.
 
 ## Strengths
