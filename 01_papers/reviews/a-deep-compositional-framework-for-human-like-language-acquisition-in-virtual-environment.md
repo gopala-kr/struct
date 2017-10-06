@@ -32,6 +32,8 @@ recognition by sequentially (softly) attending to parts of a sentence and
 grounding in image. The resulting attention map is selectively combined
 with attention from previous timesteps for final decision.
 
+
+
 ## Weaknesses / Notes
 
 Although the environment is super simple, it's a neat framework and it is useful
