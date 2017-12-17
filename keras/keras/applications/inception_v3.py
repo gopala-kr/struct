@@ -1,11 +1,15 @@
+
 # -*- coding: utf-8 -*-
 """Inception V3 model for Keras.
+
 
 Note that the input image format for this model is different than for
 the VGG16 and ResNet models (299x299 instead of 224x224),
 and that the input preprocessing function is also different (same as Xception).
 
+
 # Reference
+
 
 - [Rethinking the Inception Architecture for Computer Vision](http://arxiv.org/abs/1512.00567)
 
