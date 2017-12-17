@@ -1,9 +1,12 @@
+
 import json
 import warnings
 import numpy as np
 
+
 from ..utils.data_utils import get_file
 from .. import backend as K
+
 
 CLASS_INDEX = None
 CLASS_INDEX_PATH = 'https://s3.amazonaws.com/deep-learning-models/image-models/imagenet_class_index.json'
