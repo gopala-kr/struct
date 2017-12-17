@@ -1,9 +1,12 @@
+
 import numpy as np
+
 
 # the type of float to use throughout the session.
 _FLOATX = 'float32'
 _EPSILON = 1e-7
 _IMAGE_DATA_FORMAT = 'channels_last'
+
 
 
 def epsilon():
