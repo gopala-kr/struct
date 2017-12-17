@@ -1,3 +1,4 @@
+
 from collections import defaultdict
 from contextlib import contextmanager
 import theano
@@ -15,6 +16,7 @@ try:
 except ImportError:
     from theano.sandbox.softsign import softsign as T_softsign
 
+    
 import numpy as np
 from .common import floatx, epsilon, image_data_format
 from ..utils.generic_utils import has_arg
@@ -25,10 +27,12 @@ py_all = all
 py_sum = sum
 
 
+
 # INTERNAL UTILS
 theano.config.floatX = floatx()
 _LEARNING_PHASE = T.scalar(dtype='uint8', name='keras_learning_phase')  # 0 = test, 1 = train
 _UID_PREFIXES = defaultdict(int)
+
 
 
 def learning_phase():
