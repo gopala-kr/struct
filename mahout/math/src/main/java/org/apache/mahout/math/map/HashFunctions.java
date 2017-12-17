@@ -20,6 +20,7 @@ public final class HashFunctions {
   private HashFunctions() {
   }
 
+  
   /**
    * Returns a hashcode for the specified value.
    *
