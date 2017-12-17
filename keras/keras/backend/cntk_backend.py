@@ -1,3 +1,4 @@
+
 from __future__ import print_function
 import cntk as C
 import numpy as np
@@ -460,8 +461,10 @@ def truncated_normal(shape, mean=0.0, stddev=1.0, dtype=None, seed=None):
             stddev, seed=seed), dtype=dtype)
 
 
+
 def dtype(x):
     return _convert_dtype_string(x.dtype)
+
 
 
 def zeros(shape, dtype=None, name=None):
@@ -469,6 +472,7 @@ def zeros(shape, dtype=None, name=None):
         dtype = floatx()
     ctype = _convert_string_dtype(dtype)
     return variable(value=np.zeros(shape, ctype), dtype=dtype, name=name)
+
 
 
 def ones(shape, dtype=None, name=None):
