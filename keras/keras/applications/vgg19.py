@@ -1,9 +1,12 @@
 # -*- coding: utf-8 -*-
 """VGG19 model for Keras.
 
+
 # Reference
 
+
 - [Very Deep Convolutional Networks for Large-Scale Image Recognition](https://arxiv.org/abs/1409.1556)
+
 
 """
 from __future__ import print_function
@@ -29,8 +32,10 @@ from .imagenet_utils import preprocess_input
 from .imagenet_utils import _obtain_input_shape
 
 
+
 WEIGHTS_PATH = 'https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg19_weights_tf_dim_ordering_tf_kernels.h5'
 WEIGHTS_PATH_NO_TOP = 'https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg19_weights_tf_dim_ordering_tf_kernels_notop.h5'
+
 
 
 def VGG19(include_top=True, weights='imagenet',
@@ -39,16 +44,19 @@ def VGG19(include_top=True, weights='imagenet',
           classes=1000):
     """Instantiates the VGG19 architecture.
 
+
     Optionally loads weights pre-trained
     on ImageNet. Note that when using TensorFlow,
     for best performance you should set
     `image_data_format='channels_last'` in your Keras config
     at ~/.keras/keras.json.
 
+
     The model and the weights are compatible with both
     TensorFlow and Theano. The data format
     convention used by the model is the one
     specified in your Keras config file.
+
 
     # Arguments
         include_top: whether to include the 3 fully-connected
