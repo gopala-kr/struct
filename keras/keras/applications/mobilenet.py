@@ -1,5 +1,6 @@
 """MobileNet v1 models for Keras.
 
+
 MobileNet is a general architecture and can be used for multiple use cases.
 Depending on the use case, it can use different input layer size and
 different width factors. This allows different width models to reduce
@@ -49,6 +50,7 @@ https://github.com/tensorflow/models/blob/master/research/slim/nets/mobilenet_v1
 - [MobileNets: Efficient Convolutional Neural Networks for
    Mobile Vision Applications](https://arxiv.org/pdf/1704.04861.pdf))
 """
+
 from __future__ import print_function
 from __future__ import absolute_import
 from __future__ import division
