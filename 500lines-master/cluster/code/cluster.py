@@ -8,6 +8,7 @@ import Queue
 import random
 import threading
 
+
 # data types
 Proposal = namedtuple('Proposal', ['caller', 'client_id', 'input'])
 Ballot = namedtuple('Ballot', ['n', 'leader'])
