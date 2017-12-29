@@ -6,6 +6,7 @@ from keras.layers import LSTM, time_distributed_dense
 from keras import initializations, activations, regularizers
 from keras.engine import InputSpec
 
+
 class LSTM_zoneout(LSTM):
   def __init__(self, output_dim, zoneout_h=0., zoneout_c=0., **kwargs):
     self.zoneout_h = zoneout_h
