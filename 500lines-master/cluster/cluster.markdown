@@ -7,6 +7,7 @@ Flask-based web framework, unit tests for firewall configurations, and a
 continuous integration framework in Twisted Python. Find him as [\@djmitche](http://github.com/djmitche) on
 GitHub or at [dustin@mozilla.com](mailto:dustin@mozilla.com)._
 </markdown>
+
 ## Introduction
 
 In this chapter, we'll explore implementation of a network protocol designed to support reliable distributed computation.
