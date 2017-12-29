@@ -11,6 +11,7 @@ def unpickle(file):
 
   return dict
 
+
 def load_data_one(f):
   batch = unpickle(f)
   data = batch['data']
