@@ -131,6 +131,7 @@ def run_model(data, image_dim, label_count):
       test_results = run_in_batch_avg(session, [ cross_entropy, accuracy ], [ xs, ys ],
           feed_dict = { xs: data['test_data'], ys: data['test_labels'], is_training: False, keep_prob: 1. })
       print epoch, batch_res[1:], test_results
+      
 
 def run():
   data_dir = 'data'
@@ -140,6 +141,7 @@ def run():
   label_names = meta['label_names']
   label_count = len(label_names)
 
+  
   train_files = [ 'data_batch_%d' % d for d in xrange(1, 6) ]
   train_data, train_labels = load_data(train_files, data_dir, label_count)
   pi = np.random.permutation(len(train_data))
@@ -151,6 +153,7 @@ def run():
       'train_labels': train_labels,
       'test_data': test_data,
       'test_labels': test_labels }
+  
   run_model(data, image_dim, label_count)
 
 run()
