@@ -43,6 +43,7 @@ object Doer extends Logging {
     * @return An instance of the controller class
     */
   @DeveloperApi
+ 
   def apply[C <: AbstractDoer] (
     cls: Class[_ <: C], params: Params): C = {
 
@@ -57,6 +58,7 @@ object Doer extends Logging {
       case e: NoSuchMethodException => try {
         val zeroConstr = cls.getConstructor()
         zeroConstr.newInstance()
+       
       } catch {
         case e: NoSuchMethodException =>
           error(s"${params.getClass.getName} was used as the constructor " +
