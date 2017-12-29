@@ -15,6 +15,8 @@ def normalize(inputs,
               reuse=None):
     '''Applies layer normalization.
     
+    
+    
     Args:
       inputs: A tensor with 2 or more dimensions, where the first dimension has
         `batch_size`.
