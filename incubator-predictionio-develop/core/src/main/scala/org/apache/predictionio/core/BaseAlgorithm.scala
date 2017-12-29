@@ -89,6 +89,7 @@ abstract class BaseAlgorithm[PD, M, Q, P]
     * @param q Query
     * @return Predicted result
     */
+   
   @DeveloperApi
   def predictBase(bm: Any, q: Q): P
 
