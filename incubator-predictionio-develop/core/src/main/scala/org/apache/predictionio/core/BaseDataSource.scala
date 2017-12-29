@@ -51,6 +51,7 @@ abstract class BaseDataSource[TD, EI, Q, A] extends AbstractDoer {
     * @return Sets of training data, evaluation information, queries, and actual
     *         results
     */
+ 
   @DeveloperApi
   def readEvalBase(sc: SparkContext): Seq[(TD, EI, RDD[(Q, A)])]
 }
