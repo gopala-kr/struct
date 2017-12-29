@@ -139,6 +139,7 @@ def run_model(data, image_dim, label_count, depth):
           feed_dict = { xs: data['test_data'], ys: data['test_labels'], is_training: False, keep_prob: 1. })
       print epoch, batch_res[1:], test_results
 
+      
 def run():
   data_dir = 'data'
   image_size = 32
