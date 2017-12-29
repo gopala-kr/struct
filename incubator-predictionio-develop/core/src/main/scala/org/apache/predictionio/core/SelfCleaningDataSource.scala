@@ -116,6 +116,7 @@ trait SelfCleaningDataSource {
       } ++ rdd.filter(!isSetEvent(_))
   }
 
+ 
   def compressLProperties(events: Iterable[Event]): Iterable[Event] = {
     events.filter(isSetEvent).toIterable
       .groupBy(_.entityType)
@@ -124,6 +125,7 @@ trait SelfCleaningDataSource {
         compress(ls)
       } ++ events.filter(!isSetEvent(_))
   }
+ 
 
   def removePDuplicates(sc: SparkContext, rdd: RDD[Event]): RDD[Event] = {
     val now = DateTime.now()
@@ -318,6 +320,7 @@ trait SelfCleaningDataSource {
     }
   }
 }
+
 
 case class EventWindow(
   duration: Option[String] = None,
