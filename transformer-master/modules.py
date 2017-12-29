@@ -267,6 +267,8 @@ def label_smoothing(inputs, epsilon=0.1):
     with tf.Session() as sess:
         print(sess.run([outputs]))
     
+    
+    
     >>
     [array([[[ 0.03333334,  0.03333334,  0.93333334],
         [ 0.03333334,  0.93333334,  0.03333334],
