@@ -39,6 +39,7 @@ abstract class BaseDataSource[TD, EI, Q, A] extends AbstractDoer {
     * @param sc Spark context
     * @return Training data
     */
+ 
   @DeveloperApi
   def readTrainingBase(sc: SparkContext): TD
 
