@@ -88,6 +88,7 @@ abstract class BaseEngine[EI, Q, P, A] extends Serializable {
       (engineParams, eval(sc, engineParams, params))
     }
   }
+ 
 
   /** :: DeveloperApi ::
     * Implement this method to convert a JValue (read from an engine variant
