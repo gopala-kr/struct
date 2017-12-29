@@ -67,6 +67,7 @@ SWIG_STD_VECTOR_ENHANCED(CNTK::DeviceDescriptor)
 %template(UnorderedMapVariableVariable) std::unordered_map<CNTK::Variable, CNTK::Variable>;
 %template(FunctionPtrVector) std::vector<std::shared_ptr<CNTK::Function>>;
 
+
 // ignore items not needed.
 #define IGNORE_FUNCTION %rename("$ignore", %$isfunction, fullname=1)
 #define IGNORE_CLASS %rename("$ignore", %$isclass, fullname=1)
