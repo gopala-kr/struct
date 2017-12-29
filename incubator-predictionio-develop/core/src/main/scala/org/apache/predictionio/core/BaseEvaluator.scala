@@ -56,6 +56,7 @@ abstract class BaseEvaluator[EI, Q, P, A, ER <: BaseEvaluatorResult]
     params: WorkflowParams): ER
 }
 
+
 /** Base trait of evaluator result */
 trait BaseEvaluatorResult extends Serializable {
   /** A short description of the result */
