@@ -3,6 +3,7 @@ from keras.layers import LSTM, time_distributed_dense
 from keras import initializations, activations, regularizers
 from keras.engine import InputSpec
 
+
 # LSTM with Layer Normalization as described in:
 # https://arxiv.org/pdf/1607.06450v1.pdf
 #   page 13, equation (20), (21), and (22)
@@ -30,6 +31,7 @@ class LSTM_LN(LSTM):
     c_tm1 = states[1]
     B_U = states[2]
     B_W = states[3]
+    
 
     if self.consume_less == 'gpu':
       z = self.norm(K.dot(x * B_W[0], self.W), 0) + self.norm(K.dot(h_tm1 * B_U[0], self.U), 1) + self.b
@@ -39,6 +41,7 @@ class LSTM_LN(LSTM):
       z2 = z[:, 2 * self.output_dim: 3 * self.output_dim]
       z3 = z[:, 3 * self.output_dim:]
 
+      
       i = self.inner_activation(z0)
       f = self.inner_activation(z1)
       c = f * c_tm1 + i * self.activation(z2)
@@ -50,6 +53,7 @@ class LSTM_LN(LSTM):
         x_f = x[:, self.output_dim: 2 * self.output_dim]
         x_c = x[:, 2 * self.output_dim: 3 * self.output_dim]
         x_o = x[:, 3 * self.output_dim:]
+        
       elif self.consume_less == 'mem':
         x_i = K.dot(x * B_W[0], self.W_i) + self.b_i
         x_f = K.dot(x * B_W[1], self.W_f) + self.b_f
