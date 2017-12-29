@@ -27,6 +27,7 @@ import org.apache.predictionio.annotation.Experimental
   * @tparam Q Query class
   * @tparam P Predicted result class
   */
+
 @DeveloperApi
 abstract class BaseServing[Q, P]
   extends AbstractDoer {
