@@ -41,6 +41,7 @@ class LSTM_zoneout(LSTM):
       c = f * c_tm1 + i * self.activation(z2)
       o = self.inner_activation(z3)
     else:
+      
       if self.consume_less == 'cpu':
         x_i = x[:, :self.output_dim]
         x_f = x[:, self.output_dim: 2 * self.output_dim]
