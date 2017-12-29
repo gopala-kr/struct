@@ -14,6 +14,7 @@ import tensorflow as tf
 
 mode = 'even'
 
+
 def unpickle(file):
   import cPickle
   fo = open(file, 'rb')
@@ -57,6 +58,7 @@ def run_in_batch_avg(session, tensors, batch_placeholders, feed_dict={}, batch_s
 def weight_variable(shape):
   initial = tf.truncated_normal(shape, stddev=0.01)
   return tf.Variable(initial)
+
 
 def bias_variable(shape):
   initial = tf.constant(0.01, shape=shape)
@@ -150,6 +152,7 @@ def run_model(data, image_shape, label_count):
       for batch_idx in xrange(batch_count):
         batch_data = batches_data[batch_idx]
         batch_labels = batches_labels[batch_idx]
+        
       
         batch_res = session.run([ train_step, cross_entropy, accuracy ],
           feed_dict = { xs: batch_data, ys: batch_labels, lr: learning_rate, is_training: True })
