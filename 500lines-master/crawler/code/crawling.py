@@ -44,6 +44,7 @@ FetchStatistic = namedtuple('FetchStatistic',
                              'num_new_urls'])
 
 
+
 class Crawler:
     """Crawl a set of URLs.
 
