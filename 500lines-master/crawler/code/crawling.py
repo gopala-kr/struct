@@ -85,6 +85,8 @@ class Crawler:
         self.t0 = time.time()
         self.t1 = None
 
+        
+        
     def close(self):
         """Close resources."""
         self.session.close()
