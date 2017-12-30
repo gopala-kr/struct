@@ -26,6 +26,7 @@ def lenient_host(host):
     parts = host.split('.')[-2:]
     return ''.join(parts)
 
+  
 
 def is_redirect(response):
     return response.status in (300, 301, 302, 303, 307)
