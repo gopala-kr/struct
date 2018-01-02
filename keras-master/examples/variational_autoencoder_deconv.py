@@ -21,6 +21,8 @@ filters = 64
 # convolution kernel size
 num_conv = 3
 
+
+
 batch_size = 100
 if K.image_data_format() == 'channels_first':
     original_img_size = (img_chns, img_rows, img_cols)
