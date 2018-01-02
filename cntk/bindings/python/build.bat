@@ -22,6 +22,8 @@ set MSSdk=1
 set DISTUTILS_USE_SDK=1
 set CNTK_COMPONENT_VERSION=2.0
 
+
+
 python .\setup.py build_ext --inplace --force --compiler msvc
 if errorlevel 1 exit /b 1
 
