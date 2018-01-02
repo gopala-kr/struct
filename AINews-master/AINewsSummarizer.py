@@ -15,6 +15,8 @@ import nltk
 
 from AINewsConfig import stopwords, paths
 
+
+
 class AINewsSummarizer:
     def __init__(self):
         self.sent_detector = nltk.data.load('tokenizers/punkt/english.pickle')
