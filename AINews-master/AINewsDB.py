@@ -13,11 +13,13 @@ access the MySQL database.
 """
 
 
+
 import sys
 import re
 import MySQLdb
 
 from AINewsConfig import db
+           
            
 class AINewsDB:
     def __init__(self):
