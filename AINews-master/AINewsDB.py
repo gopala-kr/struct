@@ -11,6 +11,7 @@ The database wrapper for MySQL. It provides the fundamental functions to
 access the MySQL database.
 """
 
+
 import sys
 import re
 import MySQLdb
