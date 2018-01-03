@@ -7,6 +7,7 @@
 # notice is included.
 
 """
+
 The database wrapper for MySQL. It provides the fundamental functions to
 access the MySQL database.
 """
