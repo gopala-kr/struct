@@ -5,6 +5,7 @@ import glob
 import os
 
 
+
 def main(chapters=[], epub=False, pdf=False, html=False, mobi=False, pandoc_epub=False):
     if not os.path.isdir('output'):
         os.mkdir('output')
