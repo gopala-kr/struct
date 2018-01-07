@@ -2,6 +2,7 @@
 
 <h2><span class="mw-headline" id="Machine_learning_methods">Machine learning methods</span></h2>
 <p><a href="/w/index.php?title=Machine_learning_method&amp;action=edit&amp;redlink=1" class="new" title="Machine learning method (page does not exist)">Machine learning method</a> &#160; (<a href="/w/index.php?title=List_of_machine_learning_methods&amp;action=edit&amp;redlink=1" class="new" title="List of machine learning methods (page does not exist)">list</a>)</p>
+
 <ul>
 <li><a href="/w/index.php?title=Instance-based_algorithm&amp;action=edit&amp;redlink=1" class="new" title="Instance-based algorithm (page does not exist)">Instance-based algorithm</a>
 <ul>
@@ -27,6 +28,7 @@
 <li><a href="/wiki/Least-angle_regression" title="Least-angle regression">Least-angle regression</a> (LARS)</li>
 </ul>
 </li>
+
 <li><a href="/wiki/Statistical_classification" title="Statistical classification">Classifiers</a>
 <ul>
 <li><a href="/wiki/Probabilistic_classifier" class="mw-redirect" title="Probabilistic classifier">Probabilistic classifier</a>
