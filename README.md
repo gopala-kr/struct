@@ -1,6 +1,6 @@
 
 
-<h2><span class="mw-headline" id="Machine_learning_methods">Machine learning methods</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=14" title="Edit section: Machine learning methods">edit</a><span class="mw-editsection-bracket">]</span></span></h2>
+<h2><span class="mw-headline" id="Machine_learning_methods">Machine learning methods</span></h2>
 <p><a href="/w/index.php?title=Machine_learning_method&amp;action=edit&amp;redlink=1" class="new" title="Machine learning method (page does not exist)">Machine learning method</a> &#160; (<a href="/w/index.php?title=List_of_machine_learning_methods&amp;action=edit&amp;redlink=1" class="new" title="List of machine learning methods (page does not exist)">list</a>)</p>
 <ul>
 <li><a href="/w/index.php?title=Instance-based_algorithm&amp;action=edit&amp;redlink=1" class="new" title="Instance-based algorithm (page does not exist)">Instance-based algorithm</a>
