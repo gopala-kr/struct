@@ -40,7 +40,7 @@
 </ul>
 </li>
 </ul>
-<h3><span class="mw-headline" id="Dimensionality_reduction">Dimensionality reduction</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=15" title="Edit section: Dimensionality reduction">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="Dimensionality_reduction">Dimensionality reduction</span></h3>
 <p><a href="/wiki/Dimensionality_reduction" title="Dimensionality reduction">Dimensionality reduction</a></p>
 <ul>
 <li><a href="/wiki/Canonical_correlation_analysis" class="mw-redirect" title="Canonical correlation analysis">Canonical correlation analysis</a> (CCA)</li>
@@ -58,7 +58,7 @@
 <li><a href="/wiki/Sammon_mapping" title="Sammon mapping">Sammon mapping</a></li>
 <li><a href="/wiki/T-distributed_stochastic_neighbor_embedding" title="T-distributed stochastic neighbor embedding">t-distributed stochastic neighbor embedding</a> (t-SNE)</li>
 </ul>
-<h3><span class="mw-headline" id="Ensemble_learning">Ensemble learning</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=16" title="Edit section: Ensemble learning">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="Ensemble_learning">Ensemble learning</span></h3>
 <p><a href="/wiki/Ensemble_learning" title="Ensemble learning">Ensemble learning</a></p>
 <ul>
 <li><a href="/wiki/AdaBoost" title="AdaBoost">AdaBoost</a></li>
@@ -70,13 +70,13 @@
 <li><a href="/wiki/Random_Forest" class="mw-redirect" title="Random Forest">Random Forest</a></li>
 <li><a href="/wiki/Stacked_Generalization" class="mw-redirect" title="Stacked Generalization">Stacked Generalization</a> (blending)</li>
 </ul>
-<h3><span class="mw-headline" id="Meta_learning">Meta learning</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=17" title="Edit section: Meta learning">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="Meta_learning">Meta learning</span></h3>
 <p><a href="/wiki/Meta_learning_(computer_science)" title="Meta learning (computer science)">Meta learning</a></p>
 <ul>
 <li><a href="/wiki/Inductive_bias" title="Inductive bias">Inductive bias</a></li>
 <li><a href="/wiki/Metadata" title="Metadata">Metadata</a></li>
 </ul>
-<h3><span class="mw-headline" id="Reinforcement_learning">Reinforcement learning</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=18" title="Edit section: Reinforcement learning">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="Reinforcement_learning">Reinforcement learning</span></h3>
 <p><a href="/wiki/Reinforcement_learning" title="Reinforcement learning">Reinforcement learning</a></p>
 <ul>
 <li><a href="/wiki/Q-learning" title="Q-learning">Q-learning</a></li>
@@ -84,7 +84,7 @@
 <li><a href="/wiki/Temporal_difference_learning" title="Temporal difference learning">Temporal difference learning</a> (TD)</li>
 <li><a href="/wiki/Learning_Automata" class="mw-redirect" title="Learning Automata">Learning Automata</a></li>
 </ul>
-<h3><span class="mw-headline" id="Supervised_learning">Supervised learning</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=19" title="Edit section: Supervised learning">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="Supervised_learning">Supervised learning</span></h3>
 <p><a href="/wiki/Supervised_learning" title="Supervised learning">Supervised learning</a></p>
 <ul>
 <li><a href="/wiki/AODE" class="mw-redirect" title="AODE">AODE</a></li>
@@ -144,7 +144,7 @@
 </ul>
 </li>
 </ul>
-<h4><span class="mw-headline" id="Bayesian">Bayesian</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=20" title="Edit section: Bayesian">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<h4><span class="mw-headline" id="Bayesian">Bayesian</span></h4>
 <p><a href="/wiki/Bayesian_statistics" title="Bayesian statistics">Bayesian statistics</a></p>
 <ul>
 <li><a href="/w/index.php?title=Bayesian_knowledge_base&amp;action=edit&amp;redlink=1" class="new" title="Bayesian knowledge base (page does not exist)">Bayesian knowledge base</a></li>
@@ -155,7 +155,7 @@
 <li><a href="/wiki/Bayesian_Belief_Network" class="mw-redirect" title="Bayesian Belief Network">Bayesian Belief Network</a> (BBN)</li>
 <li><a href="/wiki/Bayesian_Network" class="mw-redirect" title="Bayesian Network">Bayesian Network</a> (BN)</li>
 </ul>
-<h4><span class="mw-headline" id="Decision_tree_algorithms">Decision tree algorithms</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=21" title="Edit section: Decision tree algorithms">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<h4><span class="mw-headline" id="Decision_tree_algorithms">Decision tree algorithms</span></h4>
 <p><a href="/w/index.php?title=Decision_tree_algorithm&amp;action=edit&amp;redlink=1" class="new" title="Decision tree algorithm (page does not exist)">Decision tree algorithm</a></p>
 <ul>
 <li><a href="/wiki/Decision_tree" title="Decision tree">Decision tree</a></li>
@@ -170,7 +170,7 @@
 <li><a href="/wiki/Random_forest" title="Random forest">Random forest</a></li>
 <li><a href="/w/index.php?title=SLIQ&amp;action=edit&amp;redlink=1" class="new" title="SLIQ (page does not exist)">SLIQ</a></li>
 </ul>
-<h4><span class="mw-headline" id="Linear_classifier">Linear classifier</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=22" title="Edit section: Linear classifier">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<h4><span class="mw-headline" id="Linear_classifier">Linear classifier</span></h4>
 <p><a href="/wiki/Linear_classifier" title="Linear classifier">Linear classifier</a></p>
 <ul>
 <li><a href="/wiki/Fisher%27s_linear_discriminant" class="mw-redirect" title="Fisher's linear discriminant">Fisher's linear discriminant</a></li>
@@ -181,7 +181,7 @@
 <li><a href="/wiki/Perceptron" title="Perceptron">Perceptron</a></li>
 <li><a href="/wiki/Support_vector_machine" title="Support vector machine">Support vector machine</a></li>
 </ul>
-<h3><span class="mw-headline" id="Unsupervised_learning">Unsupervised learning</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=23" title="Edit section: Unsupervised learning">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="Unsupervised_learning">Unsupervised learning</span></h3>
 <p><a href="/wiki/Unsupervised_learning" title="Unsupervised learning">Unsupervised learning</a></p>
 <ul>
 <li><a href="/wiki/Expectation-maximization_algorithm" class="mw-redirect" title="Expectation-maximization algorithm">Expectation-maximization algorithm</a></li>
@@ -189,7 +189,7 @@
 <li><a href="/wiki/Generative_topographic_map" title="Generative topographic map">Generative topographic map</a></li>
 <li><a href="/wiki/Information_bottleneck_method" title="Information bottleneck method">Information bottleneck method</a></li>
 </ul>
-<h4><span class="mw-headline" id="Artificial_neural_networks">Artificial neural networks</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=24" title="Edit section: Artificial neural networks">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<h4><span class="mw-headline" id="Artificial_neural_networks">Artificial neural networks</span></h4>
 <p><a href="/wiki/Artificial_neural_network" title="Artificial neural network">Artificial neural network</a></p>
 <ul>
 <li><a href="/wiki/Feedforward_neural_network" title="Feedforward neural network">Feedforward neural network</a>
@@ -200,20 +200,20 @@
 <li><a href="/wiki/Logic_learning_machine" title="Logic learning machine">Logic learning machine</a></li>
 <li><a href="/wiki/Self-organizing_map" title="Self-organizing map">Self-organizing map</a></li>
 </ul>
-<h4><span class="mw-headline" id="Association_rule_learning">Association rule learning</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=25" title="Edit section: Association rule learning">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<h4><span class="mw-headline" id="Association_rule_learning">Association rule learning</span></h4>
 <p><a href="/wiki/Association_rule_learning" title="Association rule learning">Association rule learning</a></p>
 <ul>
 <li><a href="/wiki/Apriori_algorithm" title="Apriori algorithm">Apriori algorithm</a></li>
 <li><a href="/wiki/Eclat_algorithm" class="mw-redirect" title="Eclat algorithm">Eclat algorithm</a></li>
 <li><a href="/wiki/Association_rule_learning#FP-growth_algorithm" title="Association rule learning">FP-growth algorithm</a></li>
 </ul>
-<h4><span class="mw-headline" id="Hierarchical_clustering">Hierarchical clustering</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=26" title="Edit section: Hierarchical clustering">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<h4><span class="mw-headline" id="Hierarchical_clustering">Hierarchical clustering</span></h4>
 <p><a href="/wiki/Hierarchical_clustering" title="Hierarchical clustering">Hierarchical clustering</a></p>
 <ul>
 <li><a href="/wiki/Single-linkage_clustering" title="Single-linkage clustering">Single-linkage clustering</a></li>
 <li><a href="/wiki/Conceptual_clustering" title="Conceptual clustering">Conceptual clustering</a></li>
 </ul>
-<h4><span class="mw-headline" id="Cluster_analysis">Cluster analysis</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=27" title="Edit section: Cluster analysis">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<h4><span class="mw-headline" id="Cluster_analysis">Cluster analysis</span></h4>
 <p><a href="/wiki/Cluster_analysis" title="Cluster analysis">Cluster analysis</a></p>
 <ul>
 <li><a href="/wiki/BIRCH" title="BIRCH">BIRCH</a></li>
@@ -227,13 +227,13 @@
 <li><a href="/wiki/Mean-shift" class="mw-redirect" title="Mean-shift">Mean-shift</a></li>
 <li><a href="/wiki/OPTICS_algorithm" title="OPTICS algorithm">OPTICS algorithm</a></li>
 </ul>
-<h4><span class="mw-headline" id="Anomaly_detection">Anomaly detection</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=28" title="Edit section: Anomaly detection">edit</a><span class="mw-editsection-bracket">]</span></span></h4>
+<h4><span class="mw-headline" id="Anomaly_detection">Anomaly detection</span></h4>
 <p><a href="/wiki/Anomaly_detection" title="Anomaly detection">Anomaly detection</a></p>
 <ul>
 <li><a href="/wiki/K-nearest_neighbors_classification" class="mw-redirect" title="K-nearest neighbors classification">k-nearest neighbors classification</a> (<i>k</i>-NN)</li>
 <li><a href="/wiki/Local_outlier_factor" title="Local outlier factor">Local outlier factor</a></li>
 </ul>
-<h3><span class="mw-headline" id="Semi-supervised_learning">Semi-supervised learning</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=29" title="Edit section: Semi-supervised learning">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="Semi-supervised_learning">Semi-supervised learning</span></h3>
 <p><a href="/wiki/Semi-supervised_learning" title="Semi-supervised learning">Semi-supervised learning</a></p>
 <ul>
 <li><a href="/wiki/Active_learning_(machine_learning)" title="Active learning (machine learning)">Active learning</a> – special case of semi-supervised learning in which a learning algorithm is able to interactively query the user (or some other information source) to obtain the desired outputs at new data points.<sup id="cite_ref-settles_5-0" class="reference"><a href="#cite_note-settles-5">[5]</a></sup> <sup id="cite_ref-rubens2016_6-0" class="reference"><a href="#cite_note-rubens2016-6">[6]</a></sup></li>
@@ -243,7 +243,7 @@
 <li><a href="/wiki/Co-training" title="Co-training">Co-training</a></li>
 <li><a href="/wiki/Transduction_(machine_learning)" title="Transduction (machine learning)">Transduction</a></li>
 </ul>
-<h3><span class="mw-headline" id="Deep_learning">Deep learning</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=30" title="Edit section: Deep learning">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="Deep_learning">Deep learning</span></h3>
 <p><a href="/wiki/Deep_learning" title="Deep learning">Deep learning</a></p>
 <ul>
 <li><a href="/wiki/Deep_belief_network" title="Deep belief network">Deep belief networks</a></li>
@@ -254,7 +254,7 @@
 <li><a href="/wiki/Deep_Boltzmann_Machine" class="mw-redirect" title="Deep Boltzmann Machine">Deep Boltzmann Machine</a> (DBM)</li>
 <li><a href="/wiki/Stacked_Auto-Encoders" class="mw-redirect" title="Stacked Auto-Encoders">Stacked Auto-Encoders</a></li>
 </ul>
-<h3><span class="mw-headline" id="Other_machine_learning_methods_and_problems">Other machine learning methods and problems</span><span class="mw-editsection"><span class="mw-editsection-bracket">[</span><a href="/w/index.php?title=Outline_of_machine_learning&amp;action=edit&amp;section=31" title="Edit section: Other machine learning methods and problems">edit</a><span class="mw-editsection-bracket">]</span></span></h3>
+<h3><span class="mw-headline" id="Other_machine_learning_methods_and_problems">Other machine learning methods and problems</span></h3>
 <ul>
 <li><a href="/wiki/Anomaly_detection" title="Anomaly detection">Anomaly detection</a></li>
 <li><a href="/wiki/Association_rule_learning" title="Association rule learning">Association rules</a></li>
